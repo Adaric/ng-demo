@@ -48,7 +48,7 @@
         <div class='pin'></div>
         <div class='text'>MEDIUM</div>
       </a>
-      <a class="note sticky1">
+      <a class="note sticky1" ng-click="open()">
         <div class='pin'></div>
         <div class='text'>EASY</div>
       </a>
@@ -56,7 +56,7 @@
         <div class='pin'></div>
         <div class='text'>HARD</div>
       </a>
-      <a class="note sticky1">
+      <a class="note sticky1" ng-click="open()">
         <div class='pin'></div>
         <div class='text'>EASY</div>
       </a>
@@ -64,7 +64,7 @@
         <div class='pin'></div>
         <div class='text'>HARD</div>
       </a>
-      <a class="note sticky1">
+      <a class="note sticky1" ng-click="open()">
         <div class='pin'></div>
         <div class='text'>EASY</div>
       </a>
@@ -83,23 +83,23 @@
 <div class="metro-surface" ng-controller="ModalDemoCtrl">
  <table>
   <tr>
-   <td><div class="metro-tile metro-tile-small metro-tile-Medium" ng-click="open()">Medium</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-xbox" ng-click="open()">Easy</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-Medium" ng-click="open()">Medium</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-ie" ng-click="open()">Hard</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-Medium" >Medium</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-xbox" ng-click="open()" ng-click="open()">Easy</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-Medium">Medium</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-ie">Hard</div></td>
   </tr>
   </table>
   <table>
   <tr>
    <td><div class="metro-tile metro-tile-small metro-tile-Medium">Medium</div></td>
    <td><div class="metro-tile metro-tile-small metro-tile-ie">Hard</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-xbox">Easy</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-xbox">Easy</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-xbox" ng-click="open()">Easy</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-xbox" ng-click="open()">Easy</div></td>
   </tr>
   </table>
   <table>
   <tr>
-   <td><div class="metro-tile metro-tile-small metro-tile-xbox">Easy</div><td>
+   <td><div class="metro-tile metro-tile-small metro-tile-xbox" ng-click="open()">Easy</div><td>
    <td><div class="metro-tile metro-tile-small metro-tile-Medium">Medium</div></td>
    <td><div class="metro-tile metro-tile-small metro-tile-Medium">Medium</div></td>
    <td><div class="metro-tile metro-tile-small metro-tile-ie">Hard</div></td>
@@ -109,8 +109,8 @@
   <tr>
    <td><div class="metro-tile metro-tile-small metro-tile-ie">Hard</div></td>
    <td><div class="metro-tile metro-tile-small metro-tile-Medium">Medium</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-xbox">Easy</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-xbox">Easy</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-xbox" ng-click="open()">Easy</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-xbox" ng-click="open()">Easy</div></td>
   </tr>
  </table>
 </div>

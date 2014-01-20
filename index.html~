@@ -85,8 +85,8 @@
   <tr>
    <td><div class="metro-tile metro-tile-small metro-tile-Medium" ng-click="open()">Medium</div></td>
    <td><div class="metro-tile metro-tile-small metro-tile-xbox" ng-click="open()">Easy</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-Medium">Medium</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-ie">Hard</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-Medium" ng-click="open()">Medium</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-ie" ng-click="open()">Hard</div></td>
   </tr>
   </table>
   <table>
