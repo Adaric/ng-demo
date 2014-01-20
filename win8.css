@@ -1,0 +1,87 @@
+
+body {
+	background: url(Background.jpg);
+	background-color:58169a;
+}
+
+
+span.start {
+	color:white;
+	font-size:2em;
+
+}
+
+.credits {
+	color:white;
+	text-align:right;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+
+.metro-surface{
+	padding: 40px 0px 0px 0px;
+}
+
+
+.metro-tile {
+	background-color: #D8512B;
+	border-color: #DC6241;
+	width: 232px;
+	height: 104px;
+	padding: 5px;
+	color: #FFF;
+	font-family: sans-serif;
+	font-size: 12px;
+	border-width: 3px;
+	border-style: solid;
+	cursor: default;
+	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-ms-transition: 0.1s all;
+	transition: 0.1s all;
+}
+
+
+.metro-tile-small {
+	width: 204px;
+	height: 204px;
+	font-size: 25px;
+}
+
+
+
+
+.metro-tile-xbox {
+	/*background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/XBox.png);*/
+	background-position: 8px 8px;
+        background-color:#6CB71E;
+        border-color:#6CB71E;
+}
+
+
+
+.metro-tile-music {
+	/*background: url('https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Music.png');*/
+        background-color: #D8512B;
+	border-color: #D8512B;
+}
+
+
+.metro-tile-ie {
+/*	background: url('https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/IE.png');*/
+        background-color: #2878EC;
+	border-color: #2878EC;
+}
+
+
+
+
+div.metro-tile:hover {
+	-webkit-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+	-moz-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+	-ms-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+	transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+	border-width: 3px;
+	border-style:solid; 
+}

@@ -1,0 +1,119 @@
+<!doctype html>
+<html ng-app="plunker">
+  <head>
+    <script src="angular.js"></script>
+    <script src="ui-bootstrap-tpls-0.6.0.js"></script>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <script src="index2.js"></script>
+    <link rel="stylesheet" type="text/css" href="win8.css" media="all" />
+    
+    <link href="bootstrap-combined.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div ng-controller="ModalDemoCtrl">
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3>Crack the Shell</h3>
+        </div>
+        <form ng-submit="submit()">
+          <div class="modal-body" ng-controller="SearchCtrl">
+            <h4>Question</h4>
+             <div id="box"  ng-click="search()">
+              <p > <br /> {{easy1}} <br /> </p >
+            </div>
+            <br />
+            <h4>Answer</h4>
+            <input type="text" ng-model="user.user" />
+          </div>
+          <div class="modal-footer" >
+             
+             <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+              <input type="submit" class="btn primary-btn" value="Submit"/>
+          </div>
+        </form>
+    </script>
+
+    <!--button class="btn" ng-click="open()">Open me!</button-->
+    <div ng-show="selected">Selection from a modal: {{ selected }}</div>
+</div>
+    
+    <div id='frame' ng-controller="ModalDemoCtrl">
+      <a class="note sticky1" ng-click="open()">
+        <div class='pin'></div>
+        <div class='text'>EASY</div>
+      </a>
+      <a class="note sticky2">
+        <div class='pin'></div>
+        <div class='text'>MEDIUM</div>
+      </a>
+      <a class="note sticky1">
+        <div class='pin'></div>
+        <div class='text'>EASY</div>
+      </a>
+      <a class="note sticky3">
+        <div class='pin'></div>
+        <div class='text'>HARD</div>
+      </a>
+      <a class="note sticky1">
+        <div class='pin'></div>
+        <div class='text'>EASY</div>
+      </a>
+      <a class="note sticky3">
+        <div class='pin'></div>
+        <div class='text'>HARD</div>
+      </a>
+      <a class="note sticky1">
+        <div class='pin'></div>
+        <div class='text'>EASY</div>
+      </a>
+      <a class="note sticky3">
+        <div class='pin'></div>
+        <div class='text'>HARD</div>
+      </a>
+      <a class="note sticky2">
+        <div class='pin'></div>
+        <div class='text'>MEDIUM</div>
+      </a>
+    </div>
+
+    
+
+<div class="metro-surface" ng-controller="ModalDemoCtrl">
+ <table>
+  <tr>
+   <td><div class="metro-tile metro-tile-small metro-tile-Medium" ng-click="open()">Medium</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-xbox" ng-click="open()">Easy</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-Medium" ng-click="open()">Medium</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-ie" ng-click="open()">Hard</div></td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+   <td><div class="metro-tile metro-tile-small metro-tile-Medium">Medium</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-ie">Hard</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-xbox">Easy</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-xbox">Easy</div></td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+   <td><div class="metro-tile metro-tile-small metro-tile-xbox">Easy</div><td>
+   <td><div class="metro-tile metro-tile-small metro-tile-Medium">Medium</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-Medium">Medium</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-ie">Hard</div></td>
+  </tr>
+ </table>
+  <table>
+  <tr>
+   <td><div class="metro-tile metro-tile-small metro-tile-ie">Hard</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-Medium">Medium</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-xbox">Easy</div></td>
+   <td><div class="metro-tile metro-tile-small metro-tile-xbox">Easy</div></td>
+  </tr>
+ </table>
+</div>
+
+  </body>
+</html>
