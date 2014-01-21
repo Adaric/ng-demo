@@ -5,6 +5,7 @@
     <script src="ui-bootstrap-tpls-0.6.0.js"></script>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <script src="repeat.js"></script>
     <script src="index2.js"></script>
     <link rel="stylesheet" type="text/css" href="win8.css" media="all" />
     
@@ -37,7 +38,7 @@
 
     <!--button class="btn" ng-click="open()">Open me!</button-->
     <div ng-show="selected">Selection from a modal: {{ selected }}</div>
-</div>
+</div><!--
     
     <div id='frame' ng-controller="ModalDemoCtrl">
       <a class="note sticky1" ng-click="open()">
@@ -78,9 +79,9 @@
       </a>
     </div>
 
-    
-
-<div class="metro-surface" ng-controller="ModalDemoCtrl">
+    -->
+  <!--
+  <div class="metro-surface" ng-controller="ModalDemoCtrl">
  <table>
   <tr>
    <td><div class="metro-tile metro-tile-small metro-tile-Medium" >Medium</div></td>
@@ -89,6 +90,8 @@
    <td><div class="metro-tile metro-tile-small metro-tile-ie">Hard</div></td>
   </tr>
   </table>
+</div>
+
   <table>
   <tr>
    <td><div class="metro-tile metro-tile-small metro-tile-Medium">Medium</div></td>
@@ -114,6 +117,16 @@
   </tr>
  </table>
 </div>
+-->
+<div class="metro-surface" ng-controller="question">
+	<div id='frame' ng-controller="ModalDemoCtrl">
+<table>
+  <tr>
+   <td  ng-repeat="Question in questions" ><div class="metro-tile metro-tile-small metro-tile-xbox">{{Question.l}}</div></td>
+   </tr>
+   </table>
 
+   </div>
+ </div>
   </body>
 </html>
