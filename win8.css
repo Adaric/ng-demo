@@ -19,12 +19,12 @@ span.start {
 }
 
 
-.metro-surface{
+.metro_surface{
 	padding: 40px 0px 0px 0px;
 }
 
 
-.metro-tile {
+.metro_tile {
 	background-color: #D8512B;
 	border-color: #DC6241;
 	width: 232px;
@@ -43,7 +43,7 @@ span.start {
 }
 
 
-.metro-tile-small {
+.metro_tile_small {
 	width: 204px;
 	height: 204px;
 	font-size: 25px;
@@ -52,7 +52,7 @@ span.start {
 
 
 
-.metro-tile-xbox {
+.metro_tile_xbox {
 	/*background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/XBox.png);*/
 	background-position: 8px 8px;
         background-color:#6CB71E;
@@ -61,14 +61,14 @@ span.start {
 
 
 
-.metro-tile-music {
+.metro_tile_music {
 	/*background: url('https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Music.png');*/
         background-color: #D8512B;
 	border-color: #D8512B;
 }
 
 
-.metro-tile-ie {
+.metro_tile_ie {
 /*	background: url('https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/IE.png');*/
         background-color: #2878EC;
 	border-color: #2878EC;
@@ -77,7 +77,7 @@ span.start {
 
 
 
-div.metro-tile:hover {
+div.metro_tile:hover {
 	-webkit-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
 	-moz-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
 	-ms-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
