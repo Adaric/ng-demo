@@ -14,8 +14,8 @@ var ModalDemoCtrl = function ($scope, $modal, $log ,$http) {
             windowClass: 'modal',
             controller: function ($scope, $modalInstance, $log, user) {
 
-		$scope.quest=quest;    
-                $scope.user = 'Answer Here';
+		$scope.quest = quest;    
+                $scope.answer = 'Answer Here';
                 $scope.submit = function () 
                 {
                     $log.log('Submiting user info.');
