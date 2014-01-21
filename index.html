@@ -22,7 +22,7 @@
           <div class="modal-body" ng-controller="SearchCtrl">
             <h4>Question</h4>
              <div id="box"  ng-click="search()">
-              <p > <br /> {{quest}} <br /> </p >
+              <p > <br /> {{easy1}} <br /> </p >
             </div>
             <br />
             <h4>Answer</h4>
@@ -122,7 +122,7 @@
 	<div id='frame' ng-controller="ModalDemoCtrl">
 <table>
   <tr>
-   <td  ng-repeat="Question in questions" ><div class="metro-tile metro-tile-small metro-tile-xbox" ng-click="open(Question.q)">{{Question.l}}</div></td>
+   <td  ng-repeat="Question in questions" ><div class="metro-tile metro-tile-small metro-tile-xbox" ng-click="open()">{{Question.l}}</div></td>
    </tr>
    </table>
 
