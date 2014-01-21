@@ -2,18 +2,19 @@ angular.module('plunker', ['ui.bootstrap']);
 var ModalDemoCtrl = function ($scope, $modal, $log ,$http) {
 
     $scope.user = {
-        user: '',
+        user: 'me',
         password: null
     };
 
-    $scope.open = function () {
+    $scope.open = function (quest) {
 
         $modal.open({
             templateUrl: 'myModalContent.html',
             backdrop: true,
             windowClass: 'modal',
             controller: function ($scope, $modalInstance, $log, user) {
-    
+
+		$scope.quest=quest;    
                 $scope.user = user;
                 $scope.submit = function () 
                 {
