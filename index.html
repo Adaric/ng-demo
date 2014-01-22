@@ -122,7 +122,9 @@
 	<div id='frame' ng-controller="ModalDemoCtrl">
 <table>
   <tr>
-   <td  ng-repeat="Question in questions" ><div ng-class="{metro_tile:true, metro_tile_small:true, metro_tile_xbox: Question.l=='easy', metro_tile_Medium: Question.l=='medium', metro_tile_ie: Question.l=='hard'}" ng-click="open(Question.q)">{{Question.l}}</div></td>
+   <td  ng-repeat="Question in questions" ><div ng-class="{metro_tile:true, metro_tile_small:true, metro_tile_xbox: Question.l=='easy', metro_tile_Medium: Question.l=='medium', metro_tile_ie: Question.l=='hard'}" ng-click="open(Question.q)">{{Question.l}}</div>
+  <div ng-show="$index%5==0">BREAK HERE</div> 
+  </td>
    </tr>
    </table>
 
