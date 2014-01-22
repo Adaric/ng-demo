@@ -121,10 +121,13 @@
 <div class="metro-surface" ng-controller="question">
 	<div id='frame' ng-controller="ModalDemoCtrl">
 
-   <div  ng-repeat="Question in questions"  style="display:inline-table">
-   <div ng-class="{metro_tile:true, metro_tile_small:true, metro_tile_xbox: Question.l=='easy', metro_tile_Medium: Question.l=='medium', metro_tile_ie: Question.l=='hard'}" ng-click="open(Question.q)"  >
-   {{Question.l}}
+   <div  ng-repeat="Question in questions" ng-class="{nobreak: ($index+1)%5!=0}">
+   <div ng-class="{metro_tile:true, metro_tile_small:true, metro_tile_xbox: Question.l=='easy', metro_tile_Medium: Question.l=='medium', metro_tile_ie: Question.l=='hard' }" ng-click="open(Question.q)"  >
+   {{Question.l}} {{($index+1)%5==0}}
    </div>
+   
+  
+ <!-- <br ng-show="($index+1)%5==0"> -->
  </div>
 
    </div>

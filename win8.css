@@ -44,8 +44,8 @@ span.start {
 
 
 .metro_tile_small {
-	width: 204px;
-	height: 204px;
+	width: 100px;
+	height: 100px;
 	font-size: 25px;
 }
 
@@ -74,14 +74,19 @@ span.start {
 	border-color: #2878EC;
 }
 
-
+.nobreak {
+display:inline-table;
+}
+.break {
+display:inline;
+}
 
 
 div.metro_tile:hover {
-	-webkit-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
-	-moz-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
-	-ms-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
-	transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+	-webkit-transform: scale(0.97) perspective(400px) rotateY(45deg) rotateX(0deg);
+	-moz-transform: scale(0.97) perspective(400px) rotateY(45deg) rotateX(0deg);
+	-ms-transform: scale(0.97) perspective(400px) rotateY(45deg) rotateX(0deg);
+	transform: scale(0.97) perspective(400px) rotateY(45deg) rotateX(0deg);
 	border-width: 3px;
 	border-style:solid; 
 }
