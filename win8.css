@@ -75,7 +75,7 @@ span.start {
 }
 
 .nobreak {
-display:inline-table;
+display:table-cell;
 }
 .break {
 display:inline;

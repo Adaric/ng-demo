@@ -5,5 +5,10 @@ function question($scope)
 	{q:'longest ruling dictator',l:'medium'},
 	{q:'first computer programmer',l:'hard'},
 	{q:'50th president of us',l:'hard'},
+	{q:'50th president of us',l:'hard'},
+	{q:'50th president of us',l:'hard'},
+	{q:'50th president of us',l:'hard'},
+	{q:'50th president of us',l:'hard'},
+	{q:'50th president of us',l:'hard'},
 	{q:'biggest moon of jupiter',l:'medium'}
 	];}
