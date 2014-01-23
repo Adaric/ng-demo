@@ -76,17 +76,18 @@ span.start {
 
 .nobreak {
 display:table-cell;
+
 }
 .break {
-display:inline;
+display:table-row-group;
 }
 
 
 div.metro_tile:hover {
-	-webkit-transform: scale(0.97) perspective(400px) rotateY(45deg) rotateX(0deg);
-	-moz-transform: scale(0.97) perspective(400px) rotateY(45deg) rotateX(0deg);
-	-ms-transform: scale(0.97) perspective(400px) rotateY(45deg) rotateX(0deg);
-	transform: scale(0.97) perspective(400px) rotateY(45deg) rotateX(0deg);
+	-webkit-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+	-moz-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+	-ms-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+	transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
 	border-width: 3px;
 	border-style:solid; 
 }
