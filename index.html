@@ -118,11 +118,12 @@
  </table>
 </div>
 -->
+<center>
 <div class="metro-surface" ng-controller="question">
 	<div id='frame' ng-controller="ModalDemoCtrl">
 
-   <div  ng-repeat="row in questions">
-   <div  ng-repeat="Question in row" class="nobreak">
+   <div  ng-repeat="column in questions">
+   <div  ng-repeat="Question in column" class="nobreak">
    
    <div ng-class="{metro_tile:true, metro_tile_small:true, metro_tile_xbox: Question.l=='easy', metro_tile_Medium: Question.l=='medium', metro_tile_ie: Question.l=='hard' }" ng-click="open(Question.q)" >
    {{Question.l}} 
@@ -133,5 +134,6 @@
 
    </div>
  </div>
+ </center>
   </body>
 </html>
