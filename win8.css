@@ -1,4 +1,4 @@
-
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 body {
 	background: url(Background1.jpg);
 	background-color:58169a;

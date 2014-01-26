@@ -1,27 +1,44 @@
 angular.module('plunker', ['ui.bootstrap']);
 var ModalDemoCtrl = function ($scope, $modal, $log ,$http) {
 
-    $scope.user = {
-        user: 'me',
-        password: null
-    };
 
+	$scope.user = {
+        user: 'me',
+        password: null,
+		answer: null
+    };
     $scope.open = function (quest) {
 
-        $modal.open({
-            templateUrl: 'myModalContent.html',
-            backdrop: true,
+      var modalInstance = $modal.open({
+            templateUrl: 'questionbox.html',
+            backdrop: 'static',
             windowClass: 'modal',
             controller: function ($scope, $modalInstance, $log, user) {
+			$scope.user=user;
+			$scope.quest = quest;
+	
+				 $scope.emptyanswer = true;
+    
+	//$scope.answer = 'mo';
+			//console.log($scope,user.answer);
+                $scope.submit = function ()
+					{//console.log(answer);
 
-		$scope.quest = quest;    
-                $scope.answer = 'Answer Here';
-                $scope.submit = function () 
-                {
+					if(user.answer!=null && user.answer!="")
+					{$modalInstance.close(user);
                     $log.log('Submiting user info.');
+                    $log.log(quest);
                     $log.log(user);
-                    $modalInstance.dismiss('cancel');
-                }
+					
+					//pass it 
+					
+					user.answer=null;
+					
+                   } 
+				   else
+				   {
+				   this.emptyanswer=false;}
+                };
                 $scope.cancel = function ()
                  {
                     $modalInstance.dismiss('cancel');
@@ -31,10 +48,19 @@ var ModalDemoCtrl = function ($scope, $modal, $log ,$http) {
                 user: function () {
                     return $scope.user;
                 }
+
             }
         });
+
+		modalInstance.result.then(function (selectedItem) {
+      $scope.answer = selectedItem;
+    }, function () {
+      $log.info('Modal dismissed at: ' + new Date());
+    });
     };
 };
+
+
 
 function SearchCtrl($scope, $http) {
     $scope.url = 'search.php'; // The url of our search
@@ -55,7 +81,7 @@ function SearchCtrl($scope, $http) {
         .
         error(function(data, status) {
             $scope.data = data || "Request failed";
-            $scope.status = status;         
+            $scope.status = status;
         });
     };
 }

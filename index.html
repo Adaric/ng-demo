@@ -14,7 +14,7 @@
   <body>
 
 <div ng-controller="ModalDemoCtrl">
-    <script type="text/ng-template" id="myModalContent.html">
+    <script type="text/ng-template" id="questionbox.html">
         <div class="modal-header">
             <h3>Crack the Shell</h3>
         </div>
@@ -26,10 +26,12 @@
             </div>
             <br />
             <h4>Answer</h4>
-            <input type="text" ng-model="user.user" />
+            <input type="text" ng-model="user.answer" placeholder="type your answer here" autofocus />
           </div>
           <div class="modal-footer" >
-             
+             <div collapse="emptyanswer">
+		<h5  class='alert alert-danger' >Enter an answer</h5> 
+	</div>
              <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
               <input type="submit" class="btn primary-btn" value="Submit"/>
           </div>
@@ -37,87 +39,11 @@
     </script>
 
     <!--button class="btn" ng-click="open()">Open me!</button-->
-    <div ng-show="selected">Selection from a modal: {{ selected }}</div>
-</div><!--
     
-    <div id='frame' ng-controller="ModalDemoCtrl">
-      <a class="note sticky1" ng-click="open()">
-        <div class='pin'></div>
-        <div class='text'>EASY</div>
-      </a>
-      <a class="note sticky2">
-        <div class='pin'></div>
-        <div class='text'>MEDIUM</div>
-      </a>
-      <a class="note sticky1" ng-click="open()">
-        <div class='pin'></div>
-        <div class='text'>EASY</div>
-      </a>
-      <a class="note sticky3">
-        <div class='pin'></div>
-        <div class='text'>HARD</div>
-      </a>
-      <a class="note sticky1" ng-click="open()">
-        <div class='pin'></div>
-        <div class='text'>EASY</div>
-      </a>
-      <a class="note sticky3">
-        <div class='pin'></div>
-        <div class='text'>HARD</div>
-      </a>
-      <a class="note sticky1" ng-click="open()">
-        <div class='pin'></div>
-        <div class='text'>EASY</div>
-      </a>
-      <a class="note sticky3">
-        <div class='pin'></div>
-        <div class='text'>HARD</div>
-      </a>
-      <a class="note sticky2">
-        <div class='pin'></div>
-        <div class='text'>MEDIUM</div>
-      </a>
-    </div>
-
-    -->
-  <!--
-  <div class="metro-surface" ng-controller="ModalDemoCtrl">
- <table>
-  <tr>
-   <td><div class="metro-tile metro-tile-small metro-tile-Medium" >Medium</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-xbox" ng-click="open()" ng-click="open()">Easy</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-Medium">Medium</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-ie">Hard</div></td>
-  </tr>
-  </table>
 </div>
 
-  <table>
-  <tr>
-   <td><div class="metro-tile metro-tile-small metro-tile-Medium">Medium</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-ie">Hard</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-xbox" ng-click="open()">Easy</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-xbox" ng-click="open()">Easy</div></td>
-  </tr>
-  </table>
-  <table>
-  <tr>
-   <td><div class="metro-tile metro-tile-small metro-tile-xbox" ng-click="open()">Easy</div><td>
-   <td><div class="metro-tile metro-tile-small metro-tile-Medium">Medium</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-Medium">Medium</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-ie">Hard</div></td>
-  </tr>
- </table>
-  <table>
-  <tr>
-   <td><div class="metro-tile metro-tile-small metro-tile-ie">Hard</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-Medium">Medium</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-xbox" ng-click="open()">Easy</div></td>
-   <td><div class="metro-tile metro-tile-small metro-tile-xbox" ng-click="open()">Easy</div></td>
-  </tr>
- </table>
-</div>
--->
+<div class="container">
+
 <center>
 <div class="metro-surface" ng-controller="question">
 	<div id='frame' ng-controller="ModalDemoCtrl">
@@ -135,5 +61,9 @@
    </div>
  </div>
  </center>
+ 
+ <div style="float:right" class="metro_tile metro_tile_small metro_tile_Medium">Leaderboard</div>
+ 
+ </div>
   </body>
 </html>
